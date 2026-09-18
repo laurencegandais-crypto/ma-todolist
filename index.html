@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-title" content="Ma Todolist">
   <meta name="description" content="Mes tâches personnelles, professionnelles et du foyer, synchronisées sur tous mes appareils.">
   <title>Ma Todolist</title>
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icon-192.png" type="image/png">
   <link rel="apple-touch-icon" href="icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <style>
@@ -31,7 +31,7 @@
 </head>
 <body>
 <div class="app">
-  <header><img class="brand-icon" src="icon.svg" alt=""><div class="title"><h1>Ma Todolist</h1><p>Une place claire pour chaque chose à faire.</p></div><div class="account"><span class="account-status" id="syncStatus">Mode local</span><img id="avatar" class="avatar hidden" alt=""><button id="loginBtn" class="login">Se connecter</button><button id="logoutBtn" class="hidden">Quitter</button></div></header>
+  <header><img class="brand-icon" src="icon-192.png" alt=""><div class="title"><h1>Ma Todolist</h1><p>Une place claire pour chaque chose à faire.</p></div><div class="account"><span class="account-status" id="syncStatus">Mode local</span><img id="avatar" class="avatar hidden" alt=""><button id="loginBtn" class="login">Se connecter</button><button id="logoutBtn" class="hidden">Quitter</button></div></header>
   <main>
     <div id="notice" class="notice">Connecte-toi avec Google pour retrouver tes tâches sur tous tes appareils.</div>
     <section class="panel active" id="todayPanel" style="--accent:var(--today)"><div class="hero"><div><h2 id="hello">Aujourd’hui</h2><p>Voici l’essentiel de ta journée.</p></div><div class="date-pill" id="todayDate"></div></div><div class="progress"><strong id="progressLabel">0 tâche terminée</strong><span id="progressCount">0 sur 0</span><div class="bar"><i id="progressBar"></i></div></div><form class="composer" data-category="personal"><input required maxlength="160" placeholder="Ajouter une tâche pour aujourd’hui…" aria-label="Nouvelle tâche pour aujourd’hui"><button class="add">Ajouter</button></form><div id="todayTasks" class="tasks"></div></section>
